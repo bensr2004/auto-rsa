@@ -108,7 +108,7 @@ def fidelity_init(FIDELITY_EXTERNAL=None, DOCKER=False):
             type_slowly(password_field, account[1])
             driver.find_element(by=By.CSS_SELECTOR, value=login_btn_selector).click()
             WebDriverWait(driver, 10).until(check_if_page_loaded)
-            sleep(3)
+            sleep(2)
             # Retry the login if we get an error page
             try:
                 go_back_selector = "#dom-sys-err-go-to-login-button > span > s-slot > s-assigned-wrapper"
