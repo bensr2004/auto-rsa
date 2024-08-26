@@ -101,11 +101,11 @@ def fidelity_init(FIDELITY_EXTERNAL=None, DOCKER=False):
             username_field = driver.find_element(
                 by=By.CSS_SELECTOR, value=username_selector
             )
-            type_slowly(username_field, account[0])
+            #type_slowly(username_field, account[0])
             password_field = driver.find_element(
                 by=By.CSS_SELECTOR, value=password_selector
             )
-            type_slowly(password_field, account[1])
+            #type_slowly(password_field, account[1])
             driver.find_element(by=By.CSS_SELECTOR, value=login_btn_selector).click()
             WebDriverWait(driver, 10).until(check_if_page_loaded)
             sleep(2)
